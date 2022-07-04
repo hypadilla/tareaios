@@ -54,8 +54,11 @@ class ServiciosFinancierosView: UIView, UICollectionViewDataSource, UICollection
     let tablaServicios: UICollectionView = {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.register(CeldaTablaBienestar1xTableViewCell.self, forCellWithReuseIdentifier: "CeldaTablaBienestar1xTableViewCell")
+        collectionView.register(CeldaTablaBienestar2xCollectionViewCell.self, forCellWithReuseIdentifier: "CeldaTablaBienestar2xCollectionViewCell")
         collectionView.backgroundColor = UIColor(named: "FondoGris")
         collectionView.showsVerticalScrollIndicator = false
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.contentInset = UIEdgeInsets(top: 5, left: 16, bottom: 5, right: 16)
         return collectionView
     }()
     
@@ -106,9 +109,14 @@ class ServiciosFinancierosView: UIView, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 148.0, height: 168.0)
+        let model = servicios[indexPath.row]
+        if model.tamanioImagen == 2{
+            return CGSize(width: 148.0, height: 168.0)
+        }else{
+            return CGSize(width: 148.0, height: 100.0)
+        }
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout
         collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -116,12 +124,19 @@ class ServiciosFinancierosView: UIView, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        collectionView.contentInset = UIEdgeInsets(top: 5, left: 16, bottom: 5, right: 16)
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CeldaTablaBienestar1xTableViewCell", for: indexPath) as? CeldaTablaBienestar1xTableViewCell
         let model = servicios[indexPath.row]
-        cell!.configuracion(modelo: model)
-        cell?.layoutIfNeeded()
-        return cell!
+        if model.tamanioImagen == 2{
+           let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CeldaTablaBienestar1xTableViewCell", for: indexPath) as? CeldaTablaBienestar1xTableViewCell
+            cell!.configuracion(modelo: model)
+            cell?.layoutIfNeeded()
+            return cell!
+        }else{
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CeldaTablaBienestar2xCollectionViewCell", for: indexPath) as? CeldaTablaBienestar2xCollectionViewCell
+            cell!.configuracion(modelo: model)
+            cell?.layoutIfNeeded()
+            return cell!
+        }
+        
     }
     
 }

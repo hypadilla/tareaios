@@ -25,14 +25,14 @@ class CeldaTablaBienestar1xTableViewCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var serviciosStack: UIStackView = {
-        let stack = UIStackView(arrangedSubviews:[image, label])
-        stack.axis = .vertical
-        stack.spacing = 2
-        stack.alignment = .leading
-        stack.distribution = .fillProportionally
-        return stack
-    }()
+//    private lazy var serviciosStack: UIStackView = {
+//        let stack = UIStackView(arrangedSubviews:[image, label])
+//        stack.axis = .vertical
+//        stack.spacing = 2
+//        stack.alignment = .leading
+//        stack.distribution = .fillProportionally
+//        return stack
+//    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -47,7 +47,11 @@ class CeldaTablaBienestar1xTableViewCell: UICollectionViewCell {
         layer.shadowRadius = 10
         layer.shadowOpacity = 0.2
         layer.masksToBounds = false
-        agregarSubViews(serviciosStack)
+//        agregarSubViews(serviciosStack)
+        
+        
+        agregarSubviewsLista([image,label])
+        
     }
     
     required init?(coder: NSCoder) {
@@ -56,11 +60,23 @@ class CeldaTablaBienestar1xTableViewCell: UICollectionViewCell {
     
     func configuracion (modelo: Servicio){
         label.text = modelo.titulo
-        image.image = UIImage(named: "ic_prestamos")
+        image.image = UIImage(named: modelo.imagenServicio)
     }
     
     private func setupConstraints() {
-        serviciosStack.constraintCuadradoCompletoView(self, 30)
+//        serviciosStack.constraintCuadradoCompletoView(self, 30)
+        NSLayoutConstraint.activate([
+            
+            image.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 14),
+            image.topAnchor.constraint(equalTo: topAnchor, constant: 27),
+            image.widthAnchor.constraint(equalToConstant: 105),
+            image.heightAnchor.constraint(equalToConstant: 95),
+            
+            label.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 8),
+            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
+            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
+            
+        ])
     }
     
 }

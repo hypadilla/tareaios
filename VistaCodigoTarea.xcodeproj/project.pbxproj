@@ -10,6 +10,7 @@
 		0CA8F22E287244CA00EA8739 /* ServiciosFinancierosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8F22D287244CA00EA8739 /* ServiciosFinancierosView.swift */; };
 		0CA8F2312872476600EA8739 /* ServiciosFinancieros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8F2302872476600EA8739 /* ServiciosFinancieros.swift */; };
 		0CA8F2332872496800EA8739 /* View+ContrainstExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8F2322872496800EA8739 /* View+ContrainstExtension.swift */; };
+		8B3EE5DE28736FDE00746BD9 /* CeldaTablaBienestar2xCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3EE5DD28736FDE00746BD9 /* CeldaTablaBienestar2xCollectionViewCell.swift */; };
 		8B9CA117286F90A000271852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CA116286F90A000271852 /* AppDelegate.swift */; };
 		8B9CA119286F90A000271852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CA118286F90A000271852 /* SceneDelegate.swift */; };
 		8B9CA11B286F90A000271852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CA11A286F90A000271852 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		0CA8F22D287244CA00EA8739 /* ServiciosFinancierosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosFinancierosView.swift; sourceTree = "<group>"; };
 		0CA8F2302872476600EA8739 /* ServiciosFinancieros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosFinancieros.swift; sourceTree = "<group>"; };
 		0CA8F2322872496800EA8739 /* View+ContrainstExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ContrainstExtension.swift"; sourceTree = "<group>"; };
+		8B3EE5DD28736FDE00746BD9 /* CeldaTablaBienestar2xCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaTablaBienestar2xCollectionViewCell.swift; sourceTree = "<group>"; };
 		8B9CA113286F90A000271852 /* VistaCodigoTarea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistaCodigoTarea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9CA116286F90A000271852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B9CA118286F90A000271852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9CA12C2870E00500271852 /* CeldaTablaBienestar1xTableViewCell.swift */,
+				8B3EE5DD28736FDE00746BD9 /* CeldaTablaBienestar2xCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3EE5DE28736FDE00746BD9 /* CeldaTablaBienestar2xCollectionViewCell.swift in Sources */,
 				0CA8F2312872476600EA8739 /* ServiciosFinancieros.swift in Sources */,
 				0CA8F2332872496800EA8739 /* View+ContrainstExtension.swift in Sources */,
 				8B9CA11B286F90A000271852 /* ViewController.swift in Sources */,

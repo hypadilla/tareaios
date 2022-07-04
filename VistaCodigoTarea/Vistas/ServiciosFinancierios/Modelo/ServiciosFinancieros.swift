@@ -10,4 +10,5 @@ import Foundation
 struct Servicio{
     let titulo: String
     let imagenServicio: String
+    let tamanioImagen: Int
 }
