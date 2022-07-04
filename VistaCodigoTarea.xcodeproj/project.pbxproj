@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA8F22E287244CA00EA8739 /* ServiciosFinancierosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8F22D287244CA00EA8739 /* ServiciosFinancierosView.swift */; };
+		0CA8F2312872476600EA8739 /* ServiciosFinancieros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8F2302872476600EA8739 /* ServiciosFinancieros.swift */; };
+		0CA8F2332872496800EA8739 /* View+ContrainstExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8F2322872496800EA8739 /* View+ContrainstExtension.swift */; };
 		8B9CA117286F90A000271852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CA116286F90A000271852 /* AppDelegate.swift */; };
 		8B9CA119286F90A000271852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CA118286F90A000271852 /* SceneDelegate.swift */; };
 		8B9CA11B286F90A000271852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CA11A286F90A000271852 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CA8F22D287244CA00EA8739 /* ServiciosFinancierosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosFinancierosView.swift; sourceTree = "<group>"; };
+		0CA8F2302872476600EA8739 /* ServiciosFinancieros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosFinancieros.swift; sourceTree = "<group>"; };
+		0CA8F2322872496800EA8739 /* View+ContrainstExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ContrainstExtension.swift"; sourceTree = "<group>"; };
 		8B9CA113286F90A000271852 /* VistaCodigoTarea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistaCodigoTarea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9CA116286F90A000271852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B9CA118286F90A000271852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA8F2282872444600EA8739 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				0CA8F2292872446E00EA8739 /* ServiciosFinancierios */,
+				0CA8F2322872496800EA8739 /* View+ContrainstExtension.swift */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		0CA8F2292872446E00EA8739 /* ServiciosFinancierios */ = {
+			isa = PBXGroup;
+			children = (
+				0CA8F22F2872474A00EA8739 /* Modelo */,
+				0CA8F22C2872448F00EA8739 /* DataSource */,
+				0CA8F22B2872448300EA8739 /* Vista */,
+				0CA8F22A2872447A00EA8739 /* Cells */,
+				8B9CA12A2870B9B900271852 /* ServiciosViewController.swift */,
+			);
+			path = ServiciosFinancierios;
+			sourceTree = "<group>";
+		};
+		0CA8F22A2872447A00EA8739 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8B9CA12C2870E00500271852 /* CeldaTablaBienestar1xTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0CA8F22B2872448300EA8739 /* Vista */ = {
+			isa = PBXGroup;
+			children = (
+				0CA8F22D287244CA00EA8739 /* ServiciosFinancierosView.swift */,
+			);
+			path = Vista;
+			sourceTree = "<group>";
+		};
+		0CA8F22C2872448F00EA8739 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		0CA8F22F2872474A00EA8739 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				0CA8F2302872476600EA8739 /* ServiciosFinancieros.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
 		8B9CA10A286F90A000271852 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +118,7 @@
 		8B9CA115286F90A000271852 /* VistaCodigoTarea */ = {
 			isa = PBXGroup;
 			children = (
+				0CA8F2282872444600EA8739 /* Vistas */,
 				8B9CA116286F90A000271852 /* AppDelegate.swift */,
 				8B9CA118286F90A000271852 /* SceneDelegate.swift */,
 				8B9CA11A286F90A000271852 /* ViewController.swift */,
@@ -67,8 +126,6 @@
 				8B9CA11F286F90A300271852 /* Assets.xcassets */,
 				8B9CA121286F90A300271852 /* LaunchScreen.storyboard */,
 				8B9CA124286F90A300271852 /* Info.plist */,
-				8B9CA12A2870B9B900271852 /* ServiciosViewController.swift */,
-				8B9CA12C2870E00500271852 /* CeldaTablaBienestar1xTableViewCell.swift */,
 			);
 			path = VistaCodigoTarea;
 			sourceTree = "<group>";
@@ -144,10 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA8F2312872476600EA8739 /* ServiciosFinancieros.swift in Sources */,
+				0CA8F2332872496800EA8739 /* View+ContrainstExtension.swift in Sources */,
 				8B9CA11B286F90A000271852 /* ViewController.swift in Sources */,
 				8B9CA117286F90A000271852 /* AppDelegate.swift in Sources */,
 				8B9CA12B2870B9BA00271852 /* ServiciosViewController.swift in Sources */,
 				8B9CA12D2870E00500271852 /* CeldaTablaBienestar1xTableViewCell.swift in Sources */,
+				0CA8F22E287244CA00EA8739 /* ServiciosFinancierosView.swift in Sources */,
 				8B9CA119286F90A000271852 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
